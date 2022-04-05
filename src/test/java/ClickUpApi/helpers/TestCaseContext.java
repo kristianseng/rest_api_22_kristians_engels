@@ -1,6 +1,5 @@
 package ClickUpApi.helpers;
 
-import io.cucumber.java.Scenario;
 import ClickUpApi.domain.Task;
 import ClickUpApi.domain.List;
 import ClickUpApi.domain.Folder;
@@ -9,7 +8,6 @@ public class TestCaseContext {
     private static Task testTask;
     private static List testList;
     private static Folder testFolder;
-    private static Scenario scenario;
 
     public static void init(){
         testFolder = null;
@@ -39,13 +37,5 @@ public class TestCaseContext {
 
     public static void setTestFolder(Folder testFolder) {
         TestCaseContext.testFolder = testFolder;
-    }
-
-    public static Scenario getScenario() {
-        return scenario;
-    }
-
-    public static void setScenario(Scenario scenario) {
-        TestCaseContext.scenario = scenario;
     }
 }
