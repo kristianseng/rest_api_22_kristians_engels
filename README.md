@@ -24,7 +24,7 @@ Full documentation - https://clickup.com/api
 - run test <br>
 
 
-**RestApi Functionality tested:**
+**ClickUp REST API functionality tested:**
 
 - ability to create new folder using space ID (assert if created with right name)
 - ability to get and save folder ID and name
