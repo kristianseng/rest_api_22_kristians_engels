@@ -2,7 +2,6 @@ package ClickUpApi.stepdefinitions;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
-import io.cucumber.java.Scenario;
 import ClickUpApi.helpers.TestCaseContext;
 
 import static ClickUpApi.clients.ClickUpClient.deleteFolder;
@@ -11,7 +10,7 @@ import static ClickUpApi.clients.ClickUpClient.deleteFolder;
 public class Hooks {
 
     @Before
-    public void beforeEveryScenario(Scenario scenario){
+    public void beforeEveryScenario(){
         TestCaseContext.init();
         System.out.println("THE SCENARIO IS BEGINNING THE EXECUTION!");
     }
